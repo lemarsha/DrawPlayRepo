@@ -9,7 +9,7 @@ public class Cat {
 	// eyes will be about 1/4 from top of head and 1/4 from left
 	private static final int EYE_Y = HEAD_DIMENSION/4;
 	private static final int EYE_X = HEAD_DIMENSION/4;
-	private static final int EYE_SEPARATION = HEAD_DIMENSION/5;
+	private static final int EYE_SEPARATION = HEAD_DIMENSION/4;
 	// pick eye dimensions
 	private static final int EYE_HEIGHT = 80;
 	private static final int EYE_WIDTH = 200;
@@ -35,6 +35,7 @@ public class Cat {
 		y = catY + EYE_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
+		g2.setColor(Color.red);
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		// Draw the mouth
 		g2.setColor(Color.MAGENTA);
